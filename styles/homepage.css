@@ -1,0 +1,77 @@
+.container {
+  margin-top: 50px;
+}
+
+.w-50 {
+  display: block;
+  margin: auto;
+  background-color: #ececec;
+  border-radius: 20px;
+}
+
+.form-control {
+  border: none;
+  background-color: #ececec;
+}
+
+.search-field {
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+}
+
+.search-button {
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  color: #142d4c;
+  background-color: #9fd3c7;
+  padding: 1px 10px;
+  font-size: 14px;
+}
+
+.current-button {
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #142d4c;
+  padding: 1px 10px;
+  font-size: 14px;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  padding: 10px;
+}
+
+h1,
+.current-date,
+.humidity,
+.windspeed,
+.col-sm-6 {
+  color: #385170;
+}
+
+.current-date,
+.humidity,
+.windspeed {
+  text-align: center;
+}
+
+.unit {
+  font-size: 15px;
+  vertical-align: top;
+}
+
+h2,
+.col-sm-3 {
+  color: #142d4c;
+}
+
+h3 {
+  color: #9fd3c7;
+}
+
+.card {
+  margin: 5px;
+}

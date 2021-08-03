@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app</title>
+    <link href="styles/homepage.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="w-50 p-3">
+        <form class="form-control" id="search-engine">
+          <div class="row">
+            <div class="col-6">
+              <input
+                class="search-field"
+                type="search"
+                placeholder="Enter a City 🔍"
+                id="search-input"
+              />
+            </div>
+            <div class="col-3">
+              <input
+                class="search-button"
+                type="submit"
+                value="Search"
+                id="submit-input"
+              />
+            </div>
+            <div class="col-3">
+              <button class="current-button" id="submit-current">
+                Current
+              </button>
+            </div>
+          </div>
+        </form>
+
+        <br />
+
+        <h1 class="city" id="current-city"></h1>
+
+        <h5>
+          <div class="current-date" id="date-time">
+            <srong></srong>
+          </div>
+        </h5>
+
+        <h2 class="temperature">
+          <strong id="current-temperature"></strong>
+          <span class="unit-temp"> °C </span>
+        </h2>
+
+        <div class="humidity">
+          <span class="humidity">Humidity:</span>
+          <span id="current-humidity"></span>
+          <span id="unit-humidity">%</span>
+        </div>
+
+        <div class="windspeed">
+          <span class="windspeed">Wind:</span>
+          <span id="current-windspeed"></span>
+          <span id="unit-windspeed">km/h</span>
+        </div>
+
+        <h3 class="condition">
+          <span id="current-condition"></span>
+          <span class="condition" id="current-icon"></span>
+        </h3>
+
+        <br />
+
+        <h5>
+          <div class="card">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-sm-6" class="day-two">Monday</div>
+                <div class="col-sm-3" class="condition-two">☁️</div>
+                <div class="col-sm-3" class="temperature-two">23°</div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-sm-6" class="day-three">Tuesday</div>
+                <div class="col-sm-3" class="condition-three">🌧</div>
+                <div class="col-sm-3" class="temperature-three">19°</div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-sm-6" class="day-four">Wednesday</div>
+                <div class="col-sm-3" class="condition-four">🌧</div>
+                <div class="col-sm-3" class="temperature-four">19°</div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-sm-6" class="day-five">Thursday</div>
+                <div class="col-sm-3" class="condition-five">🌧</div>
+                <div class="col-sm-3" class="temperature-five">21°</div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-sm-6" class="day-one">Friday</div>
+                <div class="col-sm-3" class="condition-one">🌧</div>
+                <div class="col-sm-3" class="temperature-one">21°</div>
+              </div>
+            </div>
+          </div>
+        </h5>
+      </div>
+    </div>
+  </body>
+  <script src="javascript/script.js"></script>
+</html>
