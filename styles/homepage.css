@@ -53,10 +53,15 @@ h1,
   text-transform: capitalize;
 }
 
-.unit {
+.unit-temp {
   font-size: 15px;
   vertical-align: top;
 }
+
+.unit{
+  text-decoration: none;
+}
+
 
 h2,
 .col-sm-3 {

@@ -24,9 +24,11 @@ function formatDate(now) {
 
 //Weather Conditions
 function showWeather(response) {
+  celsiusTemperature = response.data.main.temp
+
   document.querySelector("#current-city").innerHTML = response.data.name;
   document.querySelector("#current-temperature").innerHTML = Math.round(
-    response.data.main.temp
+    celsiusTemperature
   );
   document.querySelector("#current-humidity").innerHTML = Math.round(
     response.data.main.humidity
@@ -69,6 +71,19 @@ function searchCurrrentLocation(event) {
   navigator.geolocation.getCurrentPosition(currentLocation);
 }
 
+function showFahrenheitTemp(event){
+  event.preventDefault();
+  let fahrenheitCalc = (14 * 9) / 5 + 32;
+  document.querySelector("#current-temperature").innerHTML = Math.round(fahrenheitCalc);
+}
+
+function showCelsiusTemp(event){
+  event.preventDefault();
+  document.querySelector("#current-temperature").innerHTML = Math.round(celsiusTemperature);
+}
+
+let celsiusTemperature = null;
+
 let currentTime = new Date();
 let currentDate = document.querySelector("#date-time");
 currentDate.innerHTML = formatDate(currentTime);
@@ -79,3 +94,9 @@ form.addEventListener("submit", inputSubmit);
 let button = document.querySelector("#submit-current");
 button.addEventListener("click", searchCurrrentLocation);
 getCity("Rotterdam");
+
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", showFahrenheitTemp);
+
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", showCelsiusTemp);
