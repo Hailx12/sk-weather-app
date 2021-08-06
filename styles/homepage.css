@@ -60,6 +60,10 @@ h1,
   text-align: center;
 }
 
+.condition::first-letter{
+  text-transform: capitalize;
+}
+
 .unit {
   font-size: 15px;
   vertical-align: top;
