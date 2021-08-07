@@ -1,11 +1,10 @@
 .container {
   margin-top: 30px;
   margin-bottom: 30px;
-  
 }
 
-.weather-container{
-max-width: 400px;
+.weather-container {
+  max-width: 400px;
   background-color: #ececec;
   border-radius: 20px;
   padding: 16px;
@@ -35,7 +34,7 @@ h3 {
   text-align: center;
 }
 
-h1,
+h2,
 .current-date,
 .humidity,
 .windspeed,
@@ -49,7 +48,7 @@ h1,
   text-align: center;
 }
 
-.condition::first-letter{
+.condition::first-letter {
   text-transform: capitalize;
 }
 
@@ -58,12 +57,14 @@ h1,
   vertical-align: top;
 }
 
-.unit{
+.unit {
   text-decoration: none;
+  cursor: default;
+  position: relative;
+  color: #142d4c;
 }
 
-
-h2,
+h1,
 .col-sm-3 {
   color: #142d4c;
 }
@@ -76,7 +77,7 @@ h3 {
   margin: 5px;
 }
 
-.coder{
+.coder {
   text-align: left;
   font-size: small;
 }
