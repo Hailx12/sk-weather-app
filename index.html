@@ -23,7 +23,7 @@
               <input
                 class="form-control"
                 type="search"
-                placeholder="Enter a City 🔍"
+                placeholder="Enter a City..."
                 id="search-input"
               />
             </div>
@@ -44,37 +44,47 @@
           </div>
         </form>
 
-        <br />
-
         <h2 class="city" id="current-city"></h2>
 
         <h5>
-          <div class="current-date" id="date-time">
-            <srong></srong>
-          </div>
+          <div class="current-date" id="date-time"></div>
+          <div class="condition" id="current-condition"></div>
         </h5>
 
-        <h1 class="temperature">
-          <img src="" alt="Clear" width="50" class="icon" id="current-icon"/>
-          <strong id="current-temperature"></strong>
-          <span class="unit-temp"><a href="#" class="unit" id="celsius-link">°C</a> | <a href="#" class="unit" id="fahrenheit-link">°F</a></span>
-        </h1>
+        <div class="row">
+          <div class="col-6">
+            <div class="temperature">
+              <img
+                src=""
+                alt="Clear"
+                width="65"
+                class="icon"
+                id="current-icon"
+              />
+              <strong
+                class="current-temperature"
+                id="current-temperature"
+              ></strong>
+              <span class="unit-temp"
+                ><a href="#" class="unit" id="celsius-link">°C</a> |
+                <a href="#" class="unit" id="fahrenheit-link">°F</a>
+              </span>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="humidity">
+              <span class="humidity">Humidity:</span>
+              <span id="current-humidity"></span>
+              <span id="unit-humidity">%</span>
+            </div>
 
-        <div class="humidity">
-          <span class="humidity">Humidity:</span>
-          <span id="current-humidity"></span>
-          <span id="unit-humidity">%</span>
+            <div class="windspeed">
+              <span class="windspeed">Wind:</span>
+              <span id="current-windspeed"></span>
+              <span id="unit-windspeed">km/h</span>
+            </div>
+          </div>
         </div>
-
-        <div class="windspeed">
-          <span class="windspeed">Wind:</span>
-          <span id="current-windspeed"></span>
-          <span id="unit-windspeed">km/h</span>
-        </div>
-
-        <h3 class="condition">
-          <span id="current-condition"></span>
-        </h3>
 
         <h5>
           <div class="card">
@@ -123,16 +133,13 @@
             </div>
           </div>
         </h5>
-        </div>
-    <div class="coder">
-      <a 
-      href="https://github.com/Hailx12/sk-weather-app" 
-      target="_blank"
-      >
-      Open-source code
-    </a>, by Sohaily Kerpens</div> 
+      </div>
+      <div class="coder">
+        <a href="https://github.com/Hailx12/sk-weather-app" target="_blank">
+          Open-source code </a
+        >, by Sohaily Kerpens
+      </div>
     </div>
-  </div>
   </body>
   <script src="javascript/script.js"></script>
 </html>
