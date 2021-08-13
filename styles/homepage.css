@@ -60,24 +60,29 @@
   text-transform: capitalize;
 }
 
-.icon {
+.temperature img {
   vertical-align: top;
 }
 
-.current-temperature {
+.temperature strong {
   font-size: 40px;
   vertical-align: top;
+  color: #142d4c;
 }
 
-.unit-temp {
+.temperature .unit-temp {
   font-size: 15px;
   vertical-align: top;
 }
 
-.unit {
+.temperature .unit {
   text-decoration: none;
   cursor: default;
   color: #142d4c;
+}
+
+.temperature .unit:hover {
+  text-decoration: none;
 }
 
 .humidity,
@@ -92,8 +97,12 @@
   font-weight: normal;
 }
 
-.col-sm-3 {
+.col-sm-4 {
   color: #142d4c;
+}
+
+.temp-min {
+  opacity: 0.5;
 }
 
 .card {

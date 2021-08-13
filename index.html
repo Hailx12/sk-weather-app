@@ -50,89 +50,130 @@
           <div class="current-date" id="date-time"></div>
           <div class="condition" id="current-condition"></div>
         </h5>
+        <div class="weather-forecast" id="weather-forecast">
+          <div class="row">
+            <div class="col-6">
+              <div class="temperature">
+                <img
+                  src=""
+                  alt="Clear"
+                  width="65"
+                  class="float-left"
+                  id="current-icon"
+                />
+                <span class="float-left">
+                  <strong id="current-temperature"> </strong>
+                  <span class="unit-temp"
+                    ><a href="#" class="unit" id="celsius-link">°C</a>
+                    |
+                    <a href="#" class="unit" id="fahrenheit-link">°F</a>
+                  </span>
+                </span>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="humidity">
+                <span class="humidity">Humidity:</span>
+                <span id="current-humidity"></span>
+                <span id="unit-humidity">%</span>
+              </div>
 
-        <div class="row">
-          <div class="col-6">
-            <div class="temperature">
-              <img
-                src=""
-                alt="Clear"
-                width="65"
-                class="icon"
-                id="current-icon"
-              />
-              <strong
-                class="current-temperature"
-                id="current-temperature"
-              ></strong>
-              <span class="unit-temp"
-                ><a href="#" class="unit" id="celsius-link">°C</a> |
-                <a href="#" class="unit" id="fahrenheit-link">°F</a>
-              </span>
+              <div class="windspeed">
+                <span class="windspeed">Wind:</span>
+                <span id="current-windspeed"></span>
+                <span id="unit-windspeed">km/h</span>
+              </div>
             </div>
           </div>
-          <div class="col-6">
-            <div class="humidity">
-              <span class="humidity">Humidity:</span>
-              <span id="current-humidity"></span>
-              <span id="unit-humidity">%</span>
-            </div>
 
-            <div class="windspeed">
-              <span class="windspeed">Wind:</span>
-              <span id="current-windspeed"></span>
-              <span id="unit-windspeed">km/h</span>
+          <div class="weather-forecast">
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-6" class="forecast-date">Monday</div>
+                  <div class="col-sm-2" class="forecast-condition">
+                    <img
+                      src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png"
+                      width="30"
+                    />
+                  </div>
+                  <div class="col-sm-4" class="forecast-temperature">
+                    <span class="temp-max">21°</span> |
+                    <span class="temp-min">19°</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-6" class="forecast-date">Tuesday</div>
+                  <div class="col-sm-2" class="forecast-condition">
+                    <img
+                      src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png"
+                      width="30"
+                    />
+                  </div>
+                  <div class="col-sm-4" class="forecast-temperature">
+                    <span class="temp-max">21°</span> |
+                    <span class="temp-min">19°</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-6" class="forecast-date">Wednesday</div>
+                  <div class="col-sm-2" class="forecast-condition">
+                    <img
+                      src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png"
+                      width="30"
+                    />
+                  </div>
+                  <div class="col-sm-4" class="forecast-temperature">
+                    <span class="temp-max">21°</span> |
+                    <span class="temp-min">19°</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-6" class="forecast-date">Thursday</div>
+                  <div class="col-sm-2" class="forecast-condition">
+                    <img
+                      src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png"
+                      width="30"
+                    />
+                  </div>
+                  <div class="col-sm-4" class="forecast-temperature">
+                    <span class="temp-max">21°</span> |
+                    <span class="temp-min">19°</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-6" class="forecast-date">Friday</div>
+                  <div class="col-sm-2" class="forecast-condition">
+                    <img
+                      src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png"
+                      width="30"
+                    />
+                  </div>
+                  <div class="col-sm-4" class="forecast-temperature">
+                    <span class="temp-max">21°</span> |
+                    <span class="temp-min">19°</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-
-        <h5>
-          <div class="card">
-            <div class="card-body">
-              <div class="row">
-                <div class="col-sm-6" class="day-two">Monday</div>
-                <div class="col-sm-3" class="condition-two">☁️</div>
-                <div class="col-sm-3" class="temperature-two">23°</div>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-body">
-              <div class="row">
-                <div class="col-sm-6" class="day-three">Tuesday</div>
-                <div class="col-sm-3" class="condition-three">🌧</div>
-                <div class="col-sm-3" class="temperature-three">19°</div>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-body">
-              <div class="row">
-                <div class="col-sm-6" class="day-four">Wednesday</div>
-                <div class="col-sm-3" class="condition-four">🌧</div>
-                <div class="col-sm-3" class="temperature-four">19°</div>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-body">
-              <div class="row">
-                <div class="col-sm-6" class="day-five">Thursday</div>
-                <div class="col-sm-3" class="condition-five">🌧</div>
-                <div class="col-sm-3" class="temperature-five">21°</div>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-body">
-              <div class="row">
-                <div class="col-sm-6" class="day-one">Friday</div>
-                <div class="col-sm-3" class="condition-one">🌧</div>
-                <div class="col-sm-3" class="temperature-one">21°</div>
-              </div>
-            </div>
-          </div>
-        </h5>
       </div>
       <div class="coder">
         <a href="https://github.com/Hailx12/sk-weather-app" target="_blank">
