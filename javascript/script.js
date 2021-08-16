@@ -139,19 +139,6 @@ function searchCurrrentLocation(event) {
   navigator.geolocation.getCurrentPosition(currentLocation);
 }
 
-function showFahrenheitTemp(event) {
-  event.preventDefault();
-  let fahrenheitCalc = (14 * 9) / 5 + 32;
-  document.querySelector("#current-temperature").innerHTML =
-    Math.round(fahrenheitCalc);
-}
-
-function showCelsiusTemp(event) {
-  event.preventDefault();
-  document.querySelector("#current-temperature").innerHTML =
-    Math.round(celsiusTemperature);
-}
-
 let celsiusTemperature = null;
 
 let currentTime = new Date();
@@ -163,11 +150,5 @@ form.addEventListener("submit", inputSubmit);
 
 let button = document.querySelector("#submit-current");
 button.addEventListener("click", searchCurrrentLocation);
-
-let fahrenheitLink = document.querySelector("#fahrenheit-link");
-fahrenheitLink.addEventListener("click", showFahrenheitTemp);
-
-let celsiusLink = document.querySelector("#celsius-link");
-celsiusLink.addEventListener("click", showCelsiusTemp);
 
 getCity("Rotterdam");
