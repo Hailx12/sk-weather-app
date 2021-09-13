@@ -109,6 +109,10 @@
   margin: 7px;
 }
 
+.card-body {
+  padding: 5px;
+}
+
 .coder {
   text-align: left;
   font-size: small;
